@@ -1,0 +1,119 @@
+footer{
+  background : rgb(238, 238, 238);
+  display: flex;
+  justify-content: center;
+  padding: 3px 10%;
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+.footer-main{
+  display: block;
+}
+
+/* css logo icon */
+.socialIcons{
+  display: flex;
+  justify-self: center;
+}
+.socialIcons ul {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.socialIcons ul li {
+  list-style: none;
+  margin-top: 5px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.socialIcons ul li a {
+  position: relative; 
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 43px;
+  background: #333;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #666;
+  transition: .5s;
+}
+
+.socialIcons ul li a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: yellow;
+  transition: .2s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+.socialIcons ul li a:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px yellow;
+}
+
+.socialIcons ul li a:hover {
+  color: #faffff;
+  box-shadow: 0 0 5px rgb(251, 255, 0);
+  text-shadow: 0 0 2px #f5f5f5;
+}
+
+/* Thong tin lien he */
+.footerNav{
+  display: flex;
+  justify-content: center;
+}
+.footerNav ul{
+  display: flex;
+  padding: 5px;
+  margin-top: 30px;
+}
+
+.footerNav ul li{
+  list-style: none;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 20px;
+}
+.footerNav ul li a{
+  list-style: none;
+  color: #000000;
+}
+
+/* phan cpory */
+.footer-bottom{
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+}
+.footer-bottom p{
+  display: flex;
+  color: #000000;
+  font-weight: bold;
+}
+.design {
+  display: flex;
+  margin-left: 5px;
+  color: #3d3c3c;
+  font-weight: 700;
+}
+
+@media (max-width: 1280px){
+  footer{
+      padding: 3px 2%;
+      transition: .10s;
+  }
+}

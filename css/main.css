@@ -1,0 +1,13 @@
+content{
+  margin-top: 83px;
+  margin-bottom: 5px;
+  height : 74%;
+}
+.content{
+  justify-content: center;
+  display: flex;
+}
+.content img{
+  width : 800px;
+  height: 550px;
+}
