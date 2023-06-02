@@ -1,0 +1,29 @@
+.user{
+  position: absolute;
+  top: 100%;
+  right: -100%;
+  width: 100%;
+  height: auto;
+  background: rgb(243, 243, 243);
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 0px;
+  transition: all 0.50s ease;
+  box-shadow: 0 0.4rem 30rem rgba(0, 0, 0, 0.1);
+}
+.user i{
+  display: block;
+  margin: 10px 10px;
+  padding: 0px 25px;
+  transition: all .20s ease;
+  font-weight: 600;
+}
+.user i:hover{
+  border-radius: 10px;
+}
+/* .user a.active{
+  color: var(--text-color);
+} */
+.user.open{
+  right: 0%;
+}
