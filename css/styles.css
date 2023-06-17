@@ -1,35 +1,34 @@
 *{
   padding: 0; 
   margin: 0;
-  
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
 }
 :root{
   --bg-color: #ffffff;
-  --bg-color: linear-gradient(-45deg, rgb(58, 180, 180) 0%, rgb(201, 29, 253)50%, rgba(252,176,69,1) 100%);
   --text-color: #0d7c7e;
   --main-color: #44644b;
 }
 
 body{
-  background-color: rgb(197, 197, 197);
+  /* background:linear-gradient(-90deg, rgb(228, 33, 179), #46b5f6); */
+  background:linear-gradient(-90deg, #F5CEC7, #FFC98B);
 }
 
 body::-webkit-scrollbar {
   width: 12px;               /* chieu rong thanh scrollbar */
 }
 body::-webkit-scrollbar-track {
-  background: #ffffff;        /* màu nền của thanh scrollbar */
+  background: #030303;        /* màu nền của thanh scrollbar */
 }
 body::-webkit-scrollbar-thumb {
-  background: rgb(58, 180, 180); /* Màu của thanh (scroll thumb) */
+  background: rgb(102, 233, 14); /* Màu của thanh (scroll thumb) */
   border-radius: 8px;       /* Bo góc scroll thumb */
-  border: 2px solid #ffffff; 
+  border: 2px solid #000000; 
 }
 body::-webkit-scrollbar-thumb:hover {
-    background-color: #00ffbf; /* Hiệu ứng di chuột đổi màu*/
+    background-color: #ff0000; /* Hiệu ứng di chuột đổi màu*/
 }
 body { /*cho Firefox*/
     scrollbar-width: thin;          /* "auto" or "thin" */
@@ -51,8 +50,8 @@ header{
   padding-left: 90px;
   padding-right: 90px;
   transition: all 0.50s ease;
-  box-shadow: 0 0.4rem 30rem rgba(0, 0, 0, 0.1);
-  background-color: rgba(255, 255, 255, 255);
+  box-shadow: 0 0.4px 30px rgba(243, 243, 243, 0.1);
+  background:black;
 }
 
 .logo img{
@@ -66,14 +65,13 @@ header{
   display: flex;
 }
 .navbar a{
-  color: var(--text-color);
+  color: rgb(255, 255, 255);
   position: relative;
   font-size: 20px;
   font-weight: 650;
   padding: 5px 3px;
   margin: 0px 10px;
   transition: all .50s ease;
-
 }
 .navbar a::after{
   position: absolute;
@@ -84,14 +82,14 @@ header{
   left: 50%;
   transform: translate(-50%);
   border-radius:  2px;
-  background:#000000;
+  background:rgb(1, 204, 85);
   transition: all ease .30s;
 }
 .navbar a:hover::after{
   width: 100%;
 }
 .navbar a:hover{
-  color: rgb(0, 0, 0);
+  color: rgb(1, 204, 85);
 }
 /* .navbar a.active{
   color: rgb(10, 10, 10);
@@ -118,15 +116,19 @@ header{
   display: flex;
   align-items: center;
 }
-.search i{
-  color: #0d7c7e;
-  font-size: 21px;
+.search a{
+  color: white;
+  font-size: 16px;
+}
+.search i {
+  color: #ffffff;
+  font-size: 25px;
   margin-right: 7px;
   font-weight: 500;
 }
 .search i:hover{
   transform: scale(1.1);
-  color: rgb(0, 0, 0);
+  color: rgb(1, 204, 85);
 }
 
 .user{
@@ -145,26 +147,29 @@ header{
 }
 
 .main a:hover{
-  color: rgb(0, 0, 0);
+  color: rgb(1, 204, 85);
 }
 
 .flag{
   display: flex;
 }
 .flag img{
-  width: 30px;
+  width: 40px;
   max-width: 200%;
   height: auto;
+  margin-top: 5px;
+  border-radius: 5px;
 }
 .flag img:hover{
   transform: scale(1.1);
 }
 #menu-icon{
   font-size: 35px;
-  color: #000000;
+  color: #ffffff;
   cursor: pointer;
   z-index: 10001;
   display: none;
+  padding: 10px;
 }
 
 
@@ -192,7 +197,7 @@ header{
     background-color: #ffffff;
     align-items: center;
     justify-content: center;
-    border-radius: 0px;
+    border-radius: 10px;
     transition: all 0.50s ease;
     box-shadow: 0 0.4rem 30rem rgba(0, 0, 0, 0.1);
   }
@@ -202,15 +207,61 @@ header{
     padding: 0px 25px;
     transition: all .10s ease;
     font-weight: 600;
-    color: var(--text-color);
+    color: black;
   }
   .navbar a:hover{
     border-radius: 10px;
   }
-  /* .navbar a.active{
-    color: var(--text-color);
-  } */
   .navbar.open{
     right: 0%;
   }
+}
+
+
+#education{
+ margin: 70px 40px 10px 40px;
+}
+/* giới thiệu  */
+.education .box-container{
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding:2rem 0;
+}
+
+.education .box-container .box{
+  width:30rem;
+  padding:0 2rem;
+  padding-bottom: 4rem;
+  border-left: .2rem solid #00c521;
+}
+
+.education .box-container .box .year{
+  font-size: 30px;
+  font-weight: 100px;
+  color:#000000;
+  position: relative;
+}
+
+.education .box-container .box .year::before{
+  content:'';
+  position: absolute;
+  top:.3rem; left: -3.1rem;
+  height:2rem;
+  width:2rem;
+  border-radius: 50%;
+  background:#e0be00;
+}
+
+.education .box-container .box h3{
+  font-size: 20px;
+  color:#000000;
+  padding-top: 1rem;
+}
+
+.education .box-container .box p{
+  font-size: 15px;
+  color:#000000;
+  padding: 1rem 0;
 }
