@@ -33,7 +33,7 @@ ul.products li{
 }
 .card{
   position: relative;
-  width: 250px;
+  width: 260px;
   height: 275px;
   border-radius: 15px;
   margin: 0 auto;
@@ -74,6 +74,9 @@ ul.products li{
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   font-family: 'Bangers', cursive;
 }
+.card .fa-download{
+  margin-left: 6px;
+}
 .card a:hover{
   background:  #00ff6a;
   color: #000000;
@@ -95,6 +98,9 @@ ul.products li{
 .option ul{
   margin: 0;
   padding: 0;
+}
+.option .money{
+  color: #575757;
 }
 .option ul li{
   margin: 0 0 10px;
