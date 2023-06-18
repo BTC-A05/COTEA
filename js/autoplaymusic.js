@@ -32,12 +32,5 @@ function playLooped() {
 
 // the songs to be played!
 init([
-  'audio/mix8.mp3',
-  'audio/mix33.mp3',
-  'audio/musicsad.mp3',
-  'audio/mix5.mp3',
-  'audio/mix6.mp3',
-  'audio/mix 7.mp3',
-  'audio/mix9.mp3',
-  'audio/mix43.mp3'
+  'audio/ngayemtoi.MP3'
 ]);
